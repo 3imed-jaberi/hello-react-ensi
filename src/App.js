@@ -35,14 +35,28 @@
 
 // export { Application, App };
 
+import React from 'react';
 import Statefull from './components/Statefull'
 import Text from './components/Text'
+import Parent from './components/Parent'
+import Events from './components/Events'
+import ConditionalRendering from './components/ConditionalRendering'
+import ListRendering from './components/ListRendering'
+import ToDo from './components/ToDo'
 
+{/* <div>
+<Statefull />
+<Text />
+<hr/>
+<Parent />
+</div> */}
 const App = () => {
   return (
     <div>
-      <Statefull />
-      <Text />
+      {/* <Events /> */}
+      {/* <ConditionalRendering /> */}
+      {/* <ListRendering /> */}
+      <ToDo />
     </div>
   )
 }
