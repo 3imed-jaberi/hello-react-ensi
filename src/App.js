@@ -36,27 +36,37 @@
 // export { Application, App };
 
 import React from 'react';
-import Statefull from './components/Statefull'
-import Text from './components/Text'
-import Parent from './components/Parent'
-import Events from './components/Events'
-import ConditionalRendering from './components/ConditionalRendering'
-import ListRendering from './components/ListRendering'
-import ToDo from './components/ToDo'
+// import Statefull from './components/Statefull'
+// import Text from './components/Text'
+// import Parent from './components/Parent'
+// import Events from './components/Events'
+// import ConditionalRendering from './components/ConditionalRendering'
+// import ListRendering from './components/ListRendering'
+// import ToDo from './components/ToDo'
+// import LifeCycle from './components/LifeCycle'
+// import Style from './components/Style'
+// import Hooks from './components/Hooks'
+import ExampleWithHooks from './components/ExampleWithHooks'
 
-{/* <div>
-<Statefull />
-<Text />
-<hr/>
-<Parent />
-</div> */}
 const App = () => {
+  /* 
+    <div>
+    <Statefull />
+    <Text />
+    <hr/>
+    <Parent />
+    </div> 
+  */
   return (
     <div>
       {/* <Events /> */}
       {/* <ConditionalRendering /> */}
       {/* <ListRendering /> */}
-      <ToDo />
+      {/* <ToDo /> */}
+      {/* <LifeCycle /> */}
+      {/* <Style /> */}
+      {/* <Hooks defaultName='Jawher' /> */}
+      <ExampleWithHooks />
     </div>
   )
 }

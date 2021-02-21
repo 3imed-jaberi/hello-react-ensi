@@ -25,6 +25,11 @@ class ToDo extends React.Component {
     })
   }
 
+  removeItem (task) {
+    const newTasksList = this.state.tasksList.filter((t) => t !== task)
+    this.setState({ tasksList: [...newTasksList] })
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -38,7 +43,7 @@ class ToDo extends React.Component {
           placeholder='task ...'
         />
         <button type='click' onClick={this.addTask.bind(this)}> Add Task</button>
-        { this.state.tasksList.map((item) => <h3 key={crossUid()}> {item} </h3>) }
+        { this.state.tasksList.map((item) => <h3 key={crossUid()} onClick={this.removeItem.bind(this, item)}> {item} </h3>) }
       </React.Fragment>
     )
   }
