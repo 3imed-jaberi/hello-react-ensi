@@ -43,7 +43,8 @@ class ToDo extends React.Component {
           placeholder='task ...'
         />
         <button type='click' onClick={this.addTask.bind(this)}> Add Task</button>
-        { this.state.tasksList.map((item) => <h3 key={crossUid()} onClick={this.removeItem.bind(this, item)}> {item} </h3>) }
+        { 
+          this.state.tasksList.map((item) => <h3 key={crossUid()} onClick={this.removeItem.bind(this, item)}> {item} </h3>) }
       </React.Fragment>
     )
   }

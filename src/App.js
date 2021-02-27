@@ -46,7 +46,10 @@ import React from 'react';
 // import LifeCycle from './components/LifeCycle'
 // import Style from './components/Style'
 // import Hooks from './components/Hooks'
-import ExampleWithHooks from './components/ExampleWithHooks'
+// import ExampleWithHooks from './components/ExampleWithHooks'
+// import ToDoHooks from './components/ToDoHooks'
+// import SignupForm from './components/Formik';
+import Routes from './routes';
 
 const App = () => {
   /* 
@@ -66,7 +69,10 @@ const App = () => {
       {/* <LifeCycle /> */}
       {/* <Style /> */}
       {/* <Hooks defaultName='Jawher' /> */}
-      <ExampleWithHooks />
+      {/* <ExampleWithHooks /> */}
+      {/* <ToDoHooks /> */}
+      {/* <SignupForm /> */}
+      <Routes />
     </div>
   )
 }
